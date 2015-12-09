@@ -1,75 +1,178 @@
-<?php 
-/*
-Template Name: index
-*/
-?>
-<?php add_filter('show_admin_bar', '__return_false'); ?>
-<?php get_header('nav');?>
+<?php include("header.php");?>
 
-<div id="mycarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <!-- <ol class="carousel-indicators">
-        <li data-target="#mycarousel" data-slide-to="0"></li>
-        <li data-target="#mycarousel" data-slide-to="1"></li>
-        <li data-target="#mycarousel" data-slide-to="2"></li>
-        <li data-target="#mycarousel" data-slide-to="3"></li>
-        <li data-target="#mycarousel" data-slide-to="4"></li>
-      </ol> -->
+<header>
+    <div class='row'>
 
-      <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
+        <!-- Home : Banner Principal
+        ================================================== -->
+        <div class="col-sm-12 banner-principal no-padding">
+            <div class='triangle-up-left'></div> 
+            <div class='triangle-up-right'></div> 
 
-
-      <div class="item active">
-          <img class="back-banner" src="https://s3.amazonaws.com/cannedhead.global/img/back-nou.jpg" data-color="lightblue" alt="First Image">
-        <div class="col-xs-12  no-pading banner-filter">
-          <div class="container banner-home ">
- 
-            <div class="col-md-4 col-md-offset-4 va-menu">
-              <a href=""  data-toggle="modal" data-target="#nou"> <img class="center-block img-responsive logo-banner" src="https://s3.amazonaws.com/cannedhead.global/img/logo-nou-blanco.svg"></a>
-              <a href="" data-toggle="modal" data-target="#nou" class=" center-block mas-info-btn"> MÁS INFORMACIÓN</a>
-            </div>
-        
-
-          </div>
+            <!-- Home : Principal logo
+            ================================================== -->
+            <div class='col-sm-2 col-sm-offset-5 logo-principal'>
+                <a href="#">
+                    <img src="https://s3-sa-east-1.amazonaws.com/feelingsurf/logoblancohome.svg">
+                </a>
+            </div>               
+            <a href="#">
+                <img class='facebook-principal' src="https://s3-sa-east-1.amazonaws.com/feelingsurf/facebook2.svg">
+            </a>
+            <a href="#">
+                <img class='instagram-principal' src="https://s3-sa-east-1.amazonaws.com/feelingsurf/instagram19.svg">
+            </a>
         </div>
-      </div>
 
+        <!-- Home : Banner
+        ================================================== -->
+        <div class="col-sm-12 no-padding banner-nav no-height">
+            <div class="col-sm-8 col-sm-offset-2 no-height">
+                <nav class="navbar navbar-default">
+                  <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
 
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-      <div class="item">
-          <img class="back-banner" src="https://s3.amazonaws.com/cannedhead.global/img/back-elpaso.jpg" data-color="lightblue" alt="First Image">
-        <div class="col-xs-12  no-pading banner-filter">
-          <div class="container banner-home ">
- 
-            <div class="col-md-4 col-md-offset-4 va-menu">
-              <a class="" href="/"> <img class="center-block img-responsive logo-banner" src="https://s3.amazonaws.com/cannedhead.global/img/logo-elpaso-blanco.svg"></a>
-              <a class=" center-block mas-info-btn" href="/"> MÁS INFORMACIÓN</a>
+                      <ul class="nav navbar-nav">
+                        <li><a href="#">HOMBRE</a></li>
+                        <li><a href="#">MUJER</a></li>
+                        <li><a href="#">ACCESORIOS</a></li>
+                        <li><a href="#">SALE</a></li>
+                      </ul>
+
+                    </div><!-- /.navbar-collapse -->
+                  </div><!-- /.container-fluid -->
+                </nav>
             </div>
-        
-
-          </div>
         </div>
-      </div>
 
+        <!-- Home : Carrousel
+        ================================================== -->
+        <div class="col-sm-12 no-padding banner-2">
+            <div class='triangle-down-left'></div> 
+            <div class='triangle-down-right'></div> 
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-      <div class="item ">
-          <img class="back-banner" src="https://images.unsplash.com/photo-1445251836269-d158eaa028a6?ixlib=rb-0.3.5&q=80&fm=jpg&w=1080&fit=max&s=b3521961f1c136183ab054b5da920651" data-color="lightblue" alt="First Image">
-        <div class="col-xs-12  no-pading banner-filter">
-          <div class="container banner-home ">
- 
-            <div class="col-md-4 col-md-offset-4 va-menu">
-              <a class="" href="/"> <img class="center-block img-responsive logo-banner" src="https://s3.amazonaws.com/cannedhead.global/img/logo-global-blanco.svg"></a>
-              <a class=" center-block mas-info-btn" href="/"> MÁS INFORMACIÓN</a>
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="https://s3-sa-east-1.amazonaws.com/feelingsurf/banner-superior-2.jpg" alt="Chania">
+                  <div class="carousel-caption">
+                    <h3>FEELINGSURF</h3>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="https://s3-sa-east-1.amazonaws.com/feelingsurf/banner-superior-2.jpg" alt="Chania">
+                  <div class="carousel-caption">
+                    <h3>FEELINGSURF</h3>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="https://s3-sa-east-1.amazonaws.com/feelingsurf/banner-superior-2.jpg" alt="Flower">
+                  <div class="carousel-caption">
+                    <h3>FEELINGSURF</h3>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="https://s3-sa-east-1.amazonaws.com/feelingsurf/banner-superior-2.jpg" alt="Flower">
+                  <div class="carousel-caption">
+                    <h3>FEELINGSURF</h3>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left glyphicon-menu-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right glyphicon-menu-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-        
-
-          </div>
         </div>
-      </div>
 
-      
-  </div>
-</div>
+    </div>
+</header>
 
-<?php get_footer('nav');?>
+
+<!-- Home : Categorias
+================================================== -->
+<section class='s-categorias'>
+        <div class='row'>
+            <div class='col-sm-6 accesorios'>
+                <a href="#">
+                    <h2>ACCESORIOS</h2>
+                    <hr style='margin-top:-5px;'>
+                </a>
+                <div class='btn-categorias btn-accesorios'> 
+                    <button type='submit'> CONOCE MÁS </button>
+                </div> 
+            </div>
+            <div class='col-sm-6'>
+                <div class='row'>
+                    <div class='col-sm-12 descuento'>
+                        <a href="#">
+                            <h2>EN DESCUENTO</h2>
+                            <hr style='margin-top:-5px;'>
+                        </a>
+                        <div class='btn-categorias btn-descuento'> 
+                            <button type='submit'> CONOCE MÁS </button>
+                        </div>                     
+                    </div>
+                    <div class='col-sm-6 hombre'>
+                        <a href="#">
+                            <h3>HOMBRE</h3>
+                            <hr style='margin-top:-5px;'>
+                        </a>
+                        <div class='btn-categorias btn-gender'> 
+                            <button type='submit'> CONOCE MÁS </button>
+                        </div>                               
+                    </div>
+                    <div class='col-sm-6 mujer'>
+                        <a href="#">
+                            <h3>MUJER</h3>
+                            <hr style='margin-top:-5px;'>
+                        </a>
+                        <div class='btn-categorias btn-gender'> 
+                            <button type='submit'> CONOCE MÁS </button>
+                        </div>   
+                    </div>
+                </div>
+            </div>            
+        </div>
+</section>
+
+
+<!-- Home : video
+================================================== -->
+<section class='s-video'>
+    <div class='row' style='position: relative; height:100%'>
+        <div class='col-sm-5 video-description'>
+            <h4>FEELINGSURG</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>   
+        </div>
+        <div class='col-sm-7 no-padding' id='video-container'>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tH1FwbI1xKI" frameborder="0" allowfullscreen></iframe>   
+        </div>
+        <div class='col-sm-12 center-block'>
+            <button class='isokbutton' type='button'>SURFING IS OK</button>
+        </div>
+    </div>
+</section>
+
+<?php include("footer.php");?>
